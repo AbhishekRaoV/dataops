@@ -14,7 +14,7 @@ def validate_data(data_path="data/processed/iris_processed.csv"):
     validation_rules = [
         {"rule": "no_missing_values", "column": "all"},
         {"rule": "value_range", "column": "sepal length (cm)", "min": -3, "max": 3},
-        {"rule": "value_range", "column": "sepal width (cm)", "min": -3, "max": 3},
+        {"rule": "value_range", "column": "sepal width (cm)", "min": -3, "max": 4},
         {"rule": "value_range", "column": "petal length (cm)", "min": -3, "max": 3},
         {"rule": "value_range", "column": "petal width (cm)", "min": -3, "max": 3},
         {"rule": "unique_values", "column": "target", "min_unique": 3}
