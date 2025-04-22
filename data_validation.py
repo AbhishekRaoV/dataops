@@ -56,7 +56,7 @@ def validate_data(data_path="data/processed/iris_processed.csv"):
     # Save validation results
     os.makedirs("reports", exist_ok=True)
     with open("reports/validation_results.json", "w") as f:
-        json.dump(validation_results, f, indent=4)
+        json.dump(bool(validation_results), f, indent=4)
     
     if all_passed:
         print("✅ All data validations passed!")
